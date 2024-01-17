@@ -8,10 +8,12 @@
     if (isFixedCenter){
         actualClasses += ' fixed-center';
     }
+
+    let possibleId = (title)? `segment-${title}` : undefined;
 </script>
 
 
-<section class={actualClasses}>
+<section id={possibleId} class={actualClasses}>
     {#if title !== ''}
     <h2>{title}</h2>
     {/if}
@@ -32,7 +34,7 @@
     }
 
     section {
-        margin-bottom: calc(var(--extra-big-fs)*4);
+        margin-bottom: calc(var(--extra-big-fs)*7);
     }
 
     h2 {
