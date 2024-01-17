@@ -72,10 +72,10 @@
         </div>
 
         <ul id="socials" class="home__socials">
-            <li><SocialLogo logoName="linkedin"/></li>           
-            <li><SocialLogo logoName="gmail"/></li>           
-            <li><SocialLogo logoName="twitter"/></li>           
-            <li><SocialLogo logoName="github"/></li>           
+            <li><SocialLogo logoName="linkedin" link="https://www.linkedin.com/in/jimy-aguasviva-781b32200/"/></li>
+            <li><SocialLogo logoName="gmail"/></li>
+            <li><SocialLogo logoName="twitter" link="https://twitter.com/AguasvivaJimy"/></li>
+            <li><SocialLogo logoName="github" link="https://github.com/soworksl2"/></li>
         </ul>
     </Segment>
 
