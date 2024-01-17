@@ -8,7 +8,7 @@
 </script>
 
 
-<a href={link}>
+<a href={link} target="_blank">
     <img src={logoImg} alt={altImg}/>
 </a>
 
