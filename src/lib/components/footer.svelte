@@ -3,7 +3,7 @@
         This page has been made with Svelte. and its source code can be found <a href="#">Here</a>.
     </p>
     <p>
-        I don't keep any rights with this page. You can use it as you want, down your own responsibility.
+        this projects is under the License (CC0 v1.0)
     </p>
 </div>
 
@@ -17,6 +17,8 @@
 
     p {
         text-align: center;
+
+        margin-bottom: 10px;
     }
 
     a {
