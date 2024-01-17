@@ -36,6 +36,23 @@
         });
     }
 
+    function OnSelectTech(tech){
+        const projectSegmentTitle = document.getElementById('segment-Projects').getElementsByTagName('h2').item(0);
+
+        projectSegmentTitle.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        //make time to allow the scroll transition finish
+        setTimeout(()=>{
+            projectsTechFilter = tech.id;
+        }, 450);
+    }
+
+
+    let projectsTechFilter = 'js';
+
 </script>
 
 
@@ -67,7 +84,7 @@
             {#await dataPromise}
             <p>fetching the data</p>
             {:then data}
-            <TechsDisplayer projects={data.projects} techs={data.techs}/>
+            <TechsDisplayer projects={data.projects} techs={data.techs} OnSelectTech={OnSelectTech}/>
             {:catch err}
             <p>error fetching: {err}</p>
             {/await}
@@ -79,7 +96,7 @@
             {#await dataPromise}
             <p>fetching the data</p>
             {:then data}
-            <ProjectsDisplayer projects={data.projects} techs={data.techs}/>
+            <ProjectsDisplayer projects={data.projects} techs={data.techs} bind:techFilter={projectsTechFilter}/>
             {:catch err}
             <p>error fetching data: {err}</p>
             {/await}
@@ -128,7 +145,7 @@
     }
 
     .home__description {
-        margin-bottom: calc(var(--extra-big-fs)*2);
+        margin-bottom: calc(var(--extra-big-fs)*3);
 
         font-size: var(--semi-big-fs);
     }
@@ -139,7 +156,7 @@
     }
 
     .home__socials {
-        margin-top: calc(var(--extra-big-fs)*2.25);
+        margin-top: calc(var(--extra-big-fs)*3);
 
         display: flex;
         justify-content: center;

@@ -4,6 +4,7 @@
 
     export let projects;
     export let techs;
+    export let techFilter = 'none';
 
 
     let filterTechs = [{id: 'none', showName: 'None'}];
@@ -25,27 +26,23 @@
         });
     }
 
-    function GetProjectUnmountIfLast(index){
-        if(index >= projectsRender.length - 1){
-            return OnClearProjects;//()=>{projecsRender = FilterProjects(techFilter);};
-        }
-
-        return undefined;
-    }
-
-    function OnClearProjects(){
-        projectsRender = GetFilterProjects(techFilter);
-    }
-
-    let techFilter = 'none';
     let projectsRender = GetFilterProjects(techFilter);
+
+    //clear projectsRender each time the techFilter change
+    $: if (techFilter || true){
+        projectsRender = [];
+
+        setTimeout(()=>{
+            projectsRender = GetFilterProjects(techFilter);
+        }, 600);
+    }
 </script>
 
 
 <div>
     <div>
         <span>Filter by tech:</span>
-        <select bind:value={techFilter} on:change="{()=>{projectsRender = []}}">
+        <select bind:value={techFilter}>
             {#each filterTechs as ft}
             <option value={ft.id}>{ft.showName}</option>
             {/each}
@@ -55,8 +52,7 @@
     <div class="projects-cont">
         {#key projectsRender}
         {#each projectsRender as projectRender, i}
-        <ProjectDisplayCard index={i} project={projectRender} techs={techs}
-                            onUnmountFn={GetProjectUnmountIfLast(i)}/>
+        <ProjectDisplayCard index={i} project={projectRender} techs={techs}/>
         {/each}
         {/key}
     </div>

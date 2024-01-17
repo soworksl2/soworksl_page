@@ -1,6 +1,7 @@
 <script>
     export let projects;
     export let techs;
+    export let OnSelectTech;
 
 
     function CountProjectsWithTechUsage(projects, techId){
@@ -15,6 +16,12 @@
         return count;
     }
 
+    function CallOnSelectTechIfNecessary(tech){
+        if (OnSelectTech){
+            OnSelectTech(tech);
+        }
+    }
+
     let techsRender = [...techs];
 
     //add usageCount to each techsRenderer
@@ -26,7 +33,7 @@
 
 <div class="tech-displayer">
     {#each techsRender as tech}
-    <div class="tech-item">
+    <div class="tech-item" on:click="{()=>{CallOnSelectTechIfNecessary(tech)}}">
         {#if tech.usageCount > 0}
         <span>{tech.usageCount}</span>
         {/if}

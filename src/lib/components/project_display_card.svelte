@@ -1,11 +1,9 @@
 <script>
-    import {onMount} from 'svelte';
     import {scale} from 'svelte/transition';
 
 
     export let project;
     export let techs;
-    export let onUnmountFn;
     export let index = 0;
 
     function GetTechRenders(projectTechs, allTechs){
@@ -27,11 +25,6 @@
     }
 
     $: techsRenders = GetTechRenders(project.techs, techs);
-
-
-    onMount(() => {
-        return onUnmountFn;
-    })
 </script>
 
 
