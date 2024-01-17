@@ -1,0 +1,18 @@
+[
+    {
+        "id": "html",
+        "showName": "Html",
+        "imgUri": "public/imgs/techs/html.png"
+    },
+    {
+        "id": "css",
+        "showName": "Css",
+        "imgUri": "public/imgs/techs/css.png"
+    },
+    {
+        "id": "js",
+        "showName": "JavaScript",
+        "imgUri": "public/imgs/techs/js.png"
+    }
+]
+

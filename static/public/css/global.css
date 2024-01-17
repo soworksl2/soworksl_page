@@ -1,0 +1,24 @@
+:root {
+    --extra-big-fs: 3rem;
+    --big-fs: 2.5rem;
+    --semi-big-fs: 1.75rem;
+    --normal-fs: 1.25rem;
+    --small-fs: 0.75rem;
+
+    /*Colors*/
+    --bg-color: #09071a;
+    --fg-color: #e0d9ba;
+    --complementary-color: #75eba8;
+    --complementary-color-low: #6cab87;
+    --complementary-red-color: #ff1b1c;
+    --gay-pink-color: rgba(214, 126, 200);
+    --gay-pink-alpha-color: rgba(214, 126, 200, 0.6);
+
+    /*Extras*/
+    --normal-border-radius: 5px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong, p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+button {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
