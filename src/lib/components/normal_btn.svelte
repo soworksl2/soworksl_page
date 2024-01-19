@@ -1,4 +1,29 @@
-<button>
+<script>
+export let OnClick = undefined;
+
+
+function BuildBtnClickFunction(clickCtx){
+    if(!clickCtx){
+        return undefined;
+    }
+
+    let clickCtxType = typeof clickCtx;
+
+    if(clickCtxType === 'function'){
+        return clickCtx;
+    }
+
+    return () => {
+        window.open(clickCtx.href, clickCtx.target);
+    }
+}
+
+
+$: BtnClick = BuildBtnClickFunction(OnClick);
+</script>
+
+
+<button on:click|preventDefault={BtnClick}>
     <slot></slot>
 </button>
 
