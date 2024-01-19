@@ -61,7 +61,7 @@
         <div>
             <h1>SOWORKSL</h1>
             <p class="home__description">
-                I'm a developer with an uncertain start and no clear end; I just enjoy the journey of experimenting with new things. A big fan of the simple and a bit predictably unpredictable. 
+                A Fullstack Developer who loves and enjoy the path of learning, experimenting and discovering new technologies.
             </p>
         </div>
 
