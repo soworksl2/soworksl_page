@@ -66,7 +66,7 @@
         </div>
 
         <div class="home__btns-cont">
-            <NormalBtn>
+            <NormalBtn OnClick={{href: "https://drive.google.com/drive/folders/1Bv7sZeSVGgLmNosw12IhV9UG_LgPALjS?usp=sharing", target: "_blank"}}>
                 Download CV
             </NormalBtn>
         </div>
@@ -122,8 +122,18 @@
             <p>
                 I'm finding for a stable job that allows me to start my career as a <strong>Developer</strong>.
                 I know that I can to <strong>Contribute</strong> my bit in this <strong>Community</strong> of the
-                <strong>Computer Cience.</strong> You can find here my <a><strong>Curriculum</strong></a> or my
-                <a href="#socials" on:click|preventDefault={()=>{FocusElement('socials')}}><strong>Social Medias</strong></a>
+                <strong>Computer Cience.</strong> You can find here my 
+                <a 
+                    href="https://drive.google.com/drive/folders/1Bv7sZeSVGgLmNosw12IhV9UG_LgPALjS?usp=sharing"
+                    target="_blank">
+                    <strong>Curriculum</strong>
+                </a>
+                or my
+                <a
+                    href="#socials" 
+                    on:click|preventDefault={()=>{FocusElement('socials')}}>
+                    <strong>Social Medias</strong>
+                </a>
                 if you want to contact me.
             </p>
         </div>
