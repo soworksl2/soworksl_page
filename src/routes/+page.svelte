@@ -154,6 +154,11 @@
         font-size: var(--extra-big-fs);
     }
 
+    strong {
+        color: var(--gay-pink-color);
+        font-weight: bold;
+    }
+
     .home__description {
         margin-bottom: calc(var(--extra-big-fs)*3);
 
@@ -176,12 +181,6 @@
     .about-text p {
         font-size: var(--normal-fs);
         margin-bottom: 15px;
-    }
-
-    .about-text strong {
-        font-size: var(--normal-fs);
-        color: var(--gay-pink-color);
-        font-weight: bold;
     }
 
     .about-text a {
