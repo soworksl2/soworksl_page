@@ -51,7 +51,7 @@
     }
 
 
-    let projectsTechFilter = 'js';
+    let projectsTechFilter;
 
 </script>
 
