@@ -59,9 +59,10 @@
 <main home>
     <Segment classNames="rroot__seg-home">
         <div>
-            <h1>SOWORKSL</h1>
+            <h1><strong>SOWORKSL</strong></h1>
             <p class="home__description">
-                A Fullstack Developer who loves and enjoy the path of learning, experimenting and discovering new technologies.
+                A <strong>Fullstack Developer</strong> who loves and enjoy the path of learning, experimenting and discovering
+                new <strong>Technologies</strong>.
             </p>
         </div>
 
