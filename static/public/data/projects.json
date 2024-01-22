@@ -1,40 +1,15 @@
 [
     {
-        "id": "testing_pj_1",
-        "showName": "testing project 1",
-        "imgUri": "/public/imgs/projects/soworksl_page_img.png",
+        "id": "sowchrono",
+        "showName": "sowchrono",
+        "imgUri": "/public/imgs/projects/sowchrono.png",
+        "description": "A standalone static page with a lot of date and time functionality",
+        "infoTags": ["WIP"],
         "techs": [
             "html",
-            "css",
+            "sass",
             "js"
-        ]
-    },
-
-    
-    {
-        "id": "test 1",
-        "showName": "testing project 1",
-        "imgUri": "/public/imgs/projects/soworksl_page_img.png",
-        "techs": [
-            "js"
-        ]
-    },
-    {
-        "id": "testing 2",
-        "showName": "testing project 1",
-        "imgUri": "/public/imgs/projects/soworksl_page_img.png",
-        "techs": [
-            "css"
-        ]
-    },
-    {
-        "id": "testing 3",
-        "showName": "testing project 1",
-        "imgUri": "/public/imgs/projects/soworksl_page_img.png",
-        "techs": [
-            "html"
         ]
     }
-
 ]
 

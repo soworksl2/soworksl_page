@@ -13,6 +13,11 @@
         "id": "js",
         "showName": "JavaScript",
         "imgUri": "public/imgs/techs/js.png"
+    },
+    {
+        "id": "sass",
+        "showName": "Sass",
+        "imgUri": "public/imgs/techs/sass.png"
     }
 ]
 
