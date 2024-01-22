@@ -1,10 +1,10 @@
 export default class Project{
-    constructor({ id, showName, imgUri, description, tagInfo, techs }){
+    constructor({ id, showName, imgUri, description, infoTags, techs }){
         this.id = id;
         this.showName = showName;
         this.imgUri = imgUri;
         this.description = description;
-        this.tagInfo = tagInfo;
+        this.infoTags = infoTags;
         this.techs = techs;
     }
 }
