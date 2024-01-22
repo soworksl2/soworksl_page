@@ -59,7 +59,9 @@
     .project-card__splash {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
+
+        background-color: var(--bg-color);
     }
 
     .project-card__info {
@@ -116,6 +118,8 @@
     .project-card__tech {
         height: var(--extra-big-fs);
         aspect-ratio: 1/1;
+
+        object-fit: contain;
 
         transform: Scale(0%);
 
