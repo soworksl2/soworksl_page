@@ -1,5 +1,6 @@
 <script>
     import ProjectDisplayCard from '$lib/components/project_display_card.svelte'
+    import ProjectDisplayDialog from '$lib/components/project_display_dialog.svelte'
 
 
     export let projects;
@@ -26,7 +27,14 @@
         });
     }
 
+    function GetOnProjectCardClickFunction(project){
+        return () => {projectDialogComp.Show(project);};
+    }
+
+
+    let projectDialogComp;
     let projectsRender = GetFilterProjects(techFilter);
+
 
     //clear projectsRender each time the techFilter change
     $: if (techFilter || true){
@@ -52,10 +60,18 @@
     <div class="projects-cont">
         {#key projectsRender}
         {#each projectsRender as projectRender, i}
-        <ProjectDisplayCard index={i} project={projectRender} techs={techs}/>
+        <ProjectDisplayCard
+            index={i}
+            project={projectRender}
+            techs={techs}
+            OnClick={GetOnProjectCardClickFunction(projectRender)}/>
         {/each}
         {/key}
     </div>
+
+    <ProjectDisplayDialog 
+        bind:this={projectDialogComp}
+        techs={techs}/>
 </div>
 
 
