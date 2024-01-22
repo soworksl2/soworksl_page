@@ -5,6 +5,7 @@
     export let project;
     export let techs;
     export let index = 0;
+    export let OnClick = undefined;
 
     function GetTechRenders(projectTechs, allTechs){
         let output = [];
@@ -28,7 +29,12 @@
 </script>
 
 
-<div in:scale|global={{delay: index*150}} out:scale|global class="project-card">
+<div
+    class="project-card"
+    in:scale|global={{delay: index*150}}
+    out:scale|global
+    on:click={OnClick}>
+
     <img class="project-card__splash" src={project.imgUri}/>
 
     <div class="project-card__info">
