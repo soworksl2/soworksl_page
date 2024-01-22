@@ -40,6 +40,13 @@
         src={projectRender.imgUri}
         alt={`${projectRender.showName} image`}/>
 
+    <span class="section-label">Information tags</span>
+    <div class="project-dialog__infotags">
+        {#each projectRender.infoTags as infoTag}
+        <span class="project-dialog__infotag">{infoTag}</span>
+        {/each}
+    </div>
+
     <span class="section-label">Technologies used:</span>
     <div class="project-dialog__technologies">
         {#each techsRender as tech}
@@ -123,6 +130,26 @@
         display: block;
 
         text-align: center;
+        font-weight: bold;
+    }
+
+    .project-dialog__infotags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 5px;
+
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .project-dialog__infotags span {
+        background-color: var(--complementary-color-low);
+
+        padding: 0.5ch 1.5ch;
+
+        border-radius: 1000px;
+
         font-weight: bold;
     }
 
