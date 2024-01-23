@@ -19,6 +19,16 @@
     --normal-border-radius: 5px;
 }
 
+@media (max-width: 480px){
+    :root {
+        --extra-big-fs: 2.5rem;
+        --big-fs: 2rem;
+        --semi-big-fs: 1.45rem;
+        --normal-fs: 1rem;
+        --small-fs: 0.7rem;
+    }
+}
+
 
 html {
     scroll-behavior: smooth;

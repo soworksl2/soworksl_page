@@ -62,6 +62,14 @@
         overflow: hidden;
     }
 
+    /*the card size start to look too smal from this point*/
+    /*change to 1 column then*/
+    @media (max-width: 650px){
+        .project-card {
+            width: calc(100% - 30px);
+        }
+    }
+
     .project-card__splash {
         width: 100%;
         height: 100%;
